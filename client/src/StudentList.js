@@ -4,8 +4,8 @@ import Student from './Student';
 
 const StudentList = (props) => {
 	const studentNodes = props.data.map(student => (
-		<Student firstName={student.FirstName} lastName={student.LastName} key={student.StudentID} id={student.StudentID}>
-			testing {student.FirstName} {student.LastName}
+		<Student student={student} firstName={student.firstName} lastName={student.lastName} key={student.studentId} id={student.StudentId}  >
+			testing {student.firstName} {student.lastName} 
 		</Student>
 	));
 	return (
@@ -17,9 +17,9 @@ const StudentList = (props) => {
 
 StudentList.propTypes = {
 	data: PropTypes.arrayOf(PropTypes.shape({
-		StudentID: PropTypes.string,
-		FirstName: PropTypes.string,
-		LastName: PropTypes.string,
+		studentId: PropTypes.string,
+		firstName: PropTypes.string,
+		lastName: PropTypes.string,
 	})),
 };
 

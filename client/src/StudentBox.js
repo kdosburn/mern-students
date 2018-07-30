@@ -18,7 +18,7 @@ class StudentBox extends Component {
 	}
 
 	loadStudentsFromServer = () => {
-		fetch('/api/students')
+		fetch('/api/averages')
 			.then(data => data.json())
 			.then((res) => {
 				console.log(res.data);

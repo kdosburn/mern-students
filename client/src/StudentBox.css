@@ -8,13 +8,14 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-
+  font-family: 'Lato', sans-serif;
 }
 
 .students {
-  overflow: auto;
-  width: 75%;
-  max-width: 700px;
+  /*border: 2px solid green;*/
+  /*overflow: auto;*/
+  /*width: 75%;*/
+  max-width: 800px;
   min-width: 300px;
 }
 
@@ -24,8 +25,62 @@
 
 .singleStudent {
   padding: 10px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
+  border-top: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc;*/
+}
+
+.singleStudentTests {
+  display: flex;
+}
+
+.studentInfo {
+  /*border: 2px solid blue;*/
+  width: 100px;
+  display: flex;
+  padding: 5px;
+}
+
+.studentAverage {
+  padding: 5px;
+}
+
+.studentName {
+  /*border: 2px solid orange;*/
+  width: 80px;
+}
+
+.studentFirstName {
+  font-size: 14px;
+  font-weight: bold;
+}
+.studentLastName{
+  font-size: 12px;
+}
+
+.testScores {
+  /*border-right: 2px solid red;*/
+  -webkit-flex-wrap: nowrap; /* Safari */
+  flex-wrap: nowrap;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  /*overflow: auto;*/
+}
+
+.singleStudentTests li {
+  display: flex;
+  width: 30px;
+  border-right: 1px solid #ccc;
+  margin: 5px;
+}
+
+.singleStudent tr {
+  padding: 5px;
+  min-width: 20px;
+  border: 1px solid black;
 }
 
 .singleStudentContent {
